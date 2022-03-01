@@ -1,0 +1,48 @@
+.card {
+    // position: fi;
+    border-radius: 1.5rem;
+    margin: 2rem 0rem 0rem 2rem;
+    width: 94%;
+    // box-shadow: 0 1rem 4rem rgba($color: black, $alpha: 0.15);
+}
+
+
+.table--wrap {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    // margin-top: 2rem;
+    margin-bottom: 0rem;
+}
+
+.table {
+    // box-shadow: 0 1rem 4rem rgba($color: black, $alpha: 0.15);
+
+    &__heading {
+        // background-color: #757de8;
+        // color: #5e65c2;
+    }
+
+    &__link {
+        &:visited, &:link {
+            text-decoration: none;
+        }
+    }
+
+    &__pagination {
+        margin-top: -1rem;
+        // background: white;
+        // box-shadow: 0 1rem 4rem rgba($color: black, $alpha: 0.15);
+    }
+}
+
+.table__data--status {
+    padding: 4px 12px 4px 12px;
+    border-radius: 3rem;
+}
+
+th, td {
+    padding: 0.8rem !important;
+    // text-align: center;
+}

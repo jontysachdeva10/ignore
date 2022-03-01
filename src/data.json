@@ -1,51 +1,235 @@
 [
     {
         "id":"1",
-        "apiName": "api-1",
-        "socre": "1",
+        "apiName": "cmb-hsbcnet-ss-pa-user-message-center",
+        "socre": "7.5/9 - 0.83",
         "recommendation": "Good",
-        "apiLink": "https://www.google.com/"
+        "apiLink": "https://alm-confluence.systems.uk.hsbc/confluence/display/CMBA/%5BSummary+of+findings%5D+-+cmb-hsbcnet-ss-pa-user-message-center"
     },
     {
         "id":"2",
-        "apiName": "api-2",
-        "socre": "1",
-        "recommendation": "Bad",
-        "apiLink": "https://www.google.com/"
+        "apiName": "cmb-gtrf-sam-purging",
+        "socre": "6/9 - 0.66",
+        "recommendation": "Good",
+        "apiLink": "https://alm-confluence.systems.uk.hsbc/confluence/display/CMBA/%5BSummary+of+findings%5D+-+cmb-gtrf-sam-purging"
     },
     {
         "id":"3",
-        "apiName": "spi-3",
-        "socre": "1",
-        "recommendation": "Bad",
-        "apiLink": "https://www.google.com/"
+        "apiName": "cmb-gtrf-payments-service",
+        "socre": "6/9 - 0.66",
+        "recommendation": "Good",
+        "apiLink": "https://alm-confluence.systems.uk.hsbc/confluence/display/CMBA/%5BSummary+of+findings%5D+-+cmb-gtrf-payments-service",
+        "categoryStatus":[
+            {
+               "id":"1",
+               "category":"Usability",
+               "status":"Passed",
+               "comments":"This is being used as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"2",
+               "category":"Consistency",
+               "status":"Passed",
+               "comments":"This API has been designed as per openAPI",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"3",
+               "category":"Documentation",
+               "status":"Passed",
+               "comments":"None of the endpoints",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"4",
+               "category":"Flexibility",
+               "status":"Failed",
+               "comments":"This API is flexible as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"5",
+               "category":"Performance",
+               "status":"Failed",
+               "comments":"This API has good performance as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"6",
+               "category":"Scalability",
+               "status":"Passed",
+               "comments":"This API scalable as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"7",
+               "category":"Security",
+               "status":"Failed",
+               "comments":"This API secured as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"8",
+               "category":"Support",
+               "status":"Passed",
+               "comments":"This API supports as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"9",
+               "category":"Testing",
+               "status":"Passed",
+               "comments":"This API is tested as per standards",
+               "additionalProperties":{
+                  
+               }
+            }
+        ],
+        "results":[
+            {
+               "id":"1.1.1",
+               "category":"Usability",
+               "requirementIsMet":"Yes",
+               "scoreBand":"High",
+               "recomended":"Yes",
+               "comment":"This is being used as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"2.2.2",
+               "category":"Consistency",
+               "requirementIsMet":"Yes",
+               "scoreBand":"High",
+               "recomended":"Yes",
+               "comment":"This API has been designed as per openAPI",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"3.3.3",
+               "category":"Documentation",
+               "requirementIsMet":"Yes",
+               "scoreBand":"Medium",
+               "recomended":"Yes",
+               "comment":"None of the endpoints",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"4.4.4",
+               "category":"Flexibility",
+               "requirementIsMet":"Yes",
+               "scoreBand":"High",
+               "recomended":"Yes",
+               "comment":"This API is flexible as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"5.5.5",
+               "category":"Performance",
+               "requirementIsMet":"Yes",
+               "scoreBand":"Medium",
+               "recomended":"Yes",
+               "comment":"This API has good performance as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"6.6.6",
+               "category":"Scalability",
+               "requirementIsMet":"Yes",
+               "scoreBand":"High",
+               "recomended":"Yes",
+               "comment":"This API scalable as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"7.7.7",
+               "category":"Security",
+               "requirementIsMet":"Yes",
+               "scoreBand":"Medium",
+               "recomended":"Yes",
+               "comment":"This API secured as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"8.8.8",
+               "category":"Support",
+               "requirementIsMet":"Yes",
+               "scoreBand":"Medium",
+               "recomended":"Yes",
+               "comment":"This API supports as per standards",
+               "additionalProperties":{
+                  
+               }
+            },
+            {
+               "id":"9.9.9",
+               "category":"Testing",
+               "requirementIsMet":"Yes",
+               "scoreBand":"High",
+               "recomended":"Yes",
+               "comment":"This API is tested as per standards",
+               "additionalProperties":{
+                  
+               }
+            }
+        ]
     },
     {
         "id":"4",
-        "apiName": "gpi-4",
-        "socre": "1",
-        "recommendation": "Good",
-        "apiLink": "https://www.google.com/"
+        "apiName": "cmb-connect-digital-pa-account",
+        "socre": "3.5/9 - 0.38",
+        "recommendation": "Bad",
+        "apiLink": "https://alm-confluence.systems.uk.hsbc/confluence/display/CMBA/%5BSummary+of+findings%5D+-+cmb-connect-digital-pa-account"
     },
     {
         "id":"5",
-        "apiName": "qpi-5",
-        "socre": "1",
+        "apiName": "cmb-connect-digital-pa-report",
+        "socre": "3.5/9 - 0.38",
         "recommendation": "Bad",
-        "apiLink": "https://www.google.com/"
+        "apiLink": "https://alm-confluence.systems.uk.hsbc/confluence/display/CMBA/%5BSummary+of+findings%5D+-+cmb-connect-digital-pa-report"
     },
     {
         "id":"6",
-        "apiName": "pia-6",
-        "socre": "1",
+        "apiName": "cmb-connect-payments-pa-imps",
+        "socre": "6/9 - 0.66",
         "recommendation": "Good",
-        "apiLink": "https://www.google.com/"
+        "apiLink": "https://alm-confluence.systems.uk.hsbc/confluence/display/CMBA/%5BSummary+of+findings%5D+-+cmb-connect-payments-pa-imps"
     },
     {
         "id":"7",
-        "apiName": "aspia-6",
-        "socre": "3",
+        "apiName": "cmb-connect-payments-pa-payment",
+        "socre": "6.5/9 - 0.72",
         "recommendation": "Good",
-        "apiLink": "https://www.google.com/"
+        "apiLink": "https://alm-confluence.systems.uk.hsbc/confluence/display/CMBA/%5BSummary+of+findings%5D+-+cmb-connect-payments-pa-payment"
     }
 ]

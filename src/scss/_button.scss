@@ -1,0 +1,8 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        border: none;
+    }
+}
