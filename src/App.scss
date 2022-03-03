@@ -99,11 +99,12 @@
 
 .search__input:focus-within ~ .search__icon {
   color: #757de8;
+  // color: #a76c1f;
 }
 
 #modal {
   // margin-left: 1rem;
-  width: 90%;
+  width: 91.5%;
   // height: 90%;
 
   &::-webkit-scrollbar {
@@ -148,16 +149,16 @@
   height: 30px;
   padding: 0;
   z-index: 10;
-  background: #f6f6f6;
-  border-radius: 50%;
-  border: 1px solid #ececec;
-  box-shadow: -2px -2px 10px white, 2px 2px 10px #888888;
+  // background: #f6f6f6;
+  // border-radius: 50%;
+  // border: 1px solid #ececec;
+  // box-shadow: -2px -2px 10px white, 2px 2px 10px #888888;
   transition: 0.4s ease-in;
 
   &:hover {
     color: #fd7e14;
-    box-shadow: -2px -2px 10px white, 2px 2px 10px #888888,
-      inset -2px -2px 5px white, inset 2px 2px 5px #888888;
+    // box-shadow: -2px -2px 10px white, 2px 2px 10px #888888,
+      // inset -2px -2px 5px white, inset 2px 2px 5px #888888;
     transition: 0.4s ease-out;
   }
 }

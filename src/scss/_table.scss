@@ -40,6 +40,8 @@
 .table__data--status {
     padding: 4px 12px 4px 12px;
     border-radius: 3rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 th, td {

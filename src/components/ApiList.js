@@ -110,7 +110,7 @@ const ApiList = () => {
                           </a>
                           {/* </Link> */}
                         </td>
-                        <td>{item.socre}</td>
+                        <td>{item.score}</td>
                         <td>
                           <span
                             className="table__data--status"

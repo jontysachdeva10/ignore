@@ -41,10 +41,10 @@ const CategoryModal = ({
                 </tr>
               </thead>
               <tbody>
-                {categoryList.map((item) => {
+                {categoryList.sort((a,b) => a.id.localeCompare(b.id)).map((item) => {
                   return (
                     <tr key={item.id}>
-                      <td>{item.id}</td>
+                      <th>{item.id}</th>
                       <td>
                         <a
                           className="table__link"
@@ -60,9 +60,11 @@ const CategoryModal = ({
                           style={{
                             background:
                               (item.status === "Passed" && "#cff6dd") ||
+                              (item.status === "Need Work" && "#f6eacf") ||
                               (item.status === "Failed" && "#f6cfcf"),
                             color:
                               (item.status === "Passed" && "#1fa750") ||
+                              (item.status === "Need Work" && "#a76c1f") ||
                               (item.status === "Failed" && "#dc3545"),
                           }}
                         >
@@ -97,11 +99,11 @@ const CategoryModal = ({
                     .map((x) => {
                       return (
                         <tr key={x.id}>
-                          <td>{x.id}</td>
+                          <th>{x.id}</th>
                           <td>{x.category}</td>
-                          <td>{x.requirementIsMet}</td>
+                          <td>{x.requirementIsMet === true ? "True" : "False"}</td>
                           <td>{x.scoreBand}</td>
-                          <td>{x.recomended}</td>
+                          <td>{x.recomended  === true ? "True" : "False"}</td>
                           <td>{x.comment}</td>
                         </tr>
                       );
