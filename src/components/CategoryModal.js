@@ -23,58 +23,68 @@ const CategoryModal = ({
   return (
     <div>
       <Modal
-        id="modal"
+        id="mod"
         isOpen={showModal}
         onRequestClose={() => setShowModal(false)}
       >
         <MdClose className="modal__close" onClick={() => setShowModal(false)} />
         <div className="modal__header">{name}</div>
-        <div className="modal__card card">
+        <div className="modal__card card" tabIndex="0">
           <div className="modal__table">
-            <table className="table table-hover">
+            <table className="table">
               <thead className="modal__table--heading">
                 <tr>
-                  <th>&nbsp;</th>
-                  <th>Category</th>
-                  <th>Status</th>
-                  <th>Comments</th>
+                  <td>S.No</td>
+                  <td>Category</td>
+                  <td>Status</td>
+                  <td>Comments</td>
                 </tr>
               </thead>
               <tbody>
-                {categoryList.sort((a,b) => a.id.localeCompare(b.id)).map((item) => {
-                  return (
-                    <tr key={item.id}>
-                      <th>{item.id}</th>
-                      <td>
-                        <a
-                          className="table__link"
-                          href="#"
-                          onClick={() => renderCategory(item.category)}
-                        >
-                          {item.category}
-                        </a>
-                      </td>
-                      <td>
-                        <span
-                          className="table__data--status"
-                          style={{
-                            background:
-                              (item.status === "Passed" && "#cff6dd") ||
-                              (item.status === "Need Work" && "#f6eacf") ||
-                              (item.status === "Failed" && "#f6cfcf"),
-                            color:
-                              (item.status === "Passed" && "#1fa750") ||
-                              (item.status === "Need Work" && "#a76c1f") ||
-                              (item.status === "Failed" && "#dc3545"),
-                          }}
-                        >
-                          {item.status}
-                        </span>
-                      </td>
-                      <td>{item.comments}</td>
-                    </tr>
-                  );
-                })}
+                {categoryList
+                  .sort((a, b) => a.id.localeCompare(b.id))
+                  .map((item) => {
+                    return (
+                      <tr key={item.id}>
+                        <th>{item.id}</th>
+                        <td>
+                          <a
+                            className="modal__link"
+                            href="#"
+                            onClick={() => renderCategory(item.category)}
+                          >
+                            {item.category}
+                          </a>
+                        </td>
+                        <td>
+                          <span
+                            className="table__data--status"
+                            style={{
+                              background:
+                                (item.status === "Passed".toUpperCase() &&
+                                  "#cff6dd") ||
+                                (item.status === "Need_Work".toUpperCase() &&
+                                  "#f6eacf") ||
+                                (item.status === "Failed".toUpperCase() &&
+                                  "#f6cfcf"),
+                              color:
+                                (item.status === "Passed".toUpperCase() &&
+                                  "#1fa750") ||
+                                (item.status === "Need_Work".toUpperCase() &&
+                                  "#a76c1f") ||
+                                (item.status === "Failed".toUpperCase() &&
+                                  "#dc3545"),
+                              fontSize: "0.8rem",
+                              fontWeight: 500,
+                            }}
+                          >
+                            {item.status}
+                          </span>
+                        </td>
+                        <td className="table__comments">{item.comments}</td>
+                      </tr>
+                    );
+                  })}
               </tbody>
             </table>
           </div>
@@ -83,27 +93,28 @@ const CategoryModal = ({
           <div className="category__list">
             <div className="category__card card">
               <table className="table table-hovered">
-                <thead>
+                <thead className="modal__table--heading">
                   <tr>
-                    <th>&nbsp;</th>
-                    <th>Category</th>
-                    <th>Met Requirement?</th>
-                    <th>Score Band</th>
-                    <th>Recommended</th>
-                    <th>Comment</th>
+                    <td>S.No</td>
+                    <td>Category</td>
+                    <td>Met Requirement?</td>
+                    <td>Score Band</td>
+                    <td>Recommended</td>
+                    <td>Comment</td>
                   </tr>
                 </thead>
                 <tbody>
                   {resultList
+                    .sort((a, b) => a.id.localeCompare(b.id))
                     .filter((item) => item.category === category)
                     .map((x) => {
                       return (
                         <tr key={x.id}>
                           <th>{x.id}</th>
                           <td>{x.category}</td>
-                          <td>{x.requirementIsMet === true ? "True" : "False"}</td>
+                          <td>{x.requirementIsMet === true ? "Yes" : "No"}</td>
                           <td>{x.scoreBand}</td>
-                          <td>{x.recomended  === true ? "True" : "False"}</td>
+                          <td>{x.recomended === true ? "Yes" : "No"}</td>
                           <td>{x.comment}</td>
                         </tr>
                       );

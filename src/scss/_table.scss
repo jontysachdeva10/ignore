@@ -1,9 +1,7 @@
 .card {
-    // position: fi;
-    border-radius: 1.5rem;
-    margin: 2rem 0rem 0rem 2rem;
-    width: 94%;
-    // box-shadow: 0 1rem 4rem rgba($color: black, $alpha: 0.15);
+    // border-radius: 1rem;
+    margin: 0.2rem 0rem 0rem 1.4rem;
+    width: 95%;
 }
 
 
@@ -12,17 +10,10 @@
     width: 100%;
     display: inline-block;
     box-sizing: border-box;
-    // margin-top: 2rem;
     margin-bottom: 0rem;
 }
 
 .table {
-    // box-shadow: 0 1rem 4rem rgba($color: black, $alpha: 0.15);
-
-    &__heading {
-        // background-color: #757de8;
-        // color: #5e65c2;
-    }
 
     &__link {
         &:visited, &:link {
@@ -30,12 +21,77 @@
         }
     }
 
+    &__heading {
+        background-color: rgb(226, 226, 226);
+        color: rgb(90, 90, 90);
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
     &__pagination {
         margin-top: -1rem;
-        // background: white;
-        // box-shadow: 0 1rem 4rem rgba($color: black, $alpha: 0.15);
+    }
+
+    &__categories {
+        width: 15%;
+    }
+
+    &__comments {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        width: 8rem;
+        display: inline-block;
+    }
+
+    &__tooltip {
+        margin-left: 9rem;
+        margin-top: -1.5rem;
+        cursor: pointer;
+
+        &--img {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+
+        &--icon {
+            margin-top: -0.3rem;
+            font-size: 1.4rem;
+            // color: #FF0000;
+            -webkit-animation: glowing 1500ms infinite;
+            -moz-animation: glowing 1500ms infinite;
+            -o-animation: glowing 1500ms infinite;
+            animation: glowing 1500ms infinite;
+            // color: rgb(255, 69, 56);
+            // border-radius: 50%;
+        }
     }
 }
+
+// @-webkit-keyframes glowing {
+//     0% { color: #B20000;  }
+//     50% { color: #FF0000;  }
+//     100% { color: #B20000; }
+//   }
+  
+//   @-moz-keyframes glowing {
+//     0% { color: #B20000;  }
+//     50% { color: #FF0000; }
+//     100% { color: #B20000; }
+//   }
+  
+//   @-o-keyframes glowing {
+//     0% { color: #B20000; }
+//     50% { color: #FF0000;  }
+//     100% { color: #B20000;  }
+//   }
+  
+  @keyframes glowing {
+    0% { color: #ee7979; }
+    50% { color: #FF0000;  }
+    100% { color: #ee7979; }
+  }
 
 .table__data--status {
     padding: 4px 12px 4px 12px;
@@ -45,6 +101,5 @@
 }
 
 th, td {
-    padding: 0.8rem !important;
-    // text-align: center;
+    padding: 0.6rem !important;
 }

@@ -1,14 +1,20 @@
 .sidebar {
-  width: 15rem;
+  width: 11rem;
   position: fixed;
   height: 100%;
-  background: rgb(243, 243, 243);
+  background: #f1f1f1;
   left: 0;
   top: 0;
 
   &__brand {
     height: 90px;
-    padding: 1rem 0rem 1rem 4.6rem;
+    margin-top: 1rem;
+    text-align: center;
+
+    &--line {
+      margin-top: 1rem;
+      border-top: 1px solid #003f6e;
+    }
   }
 
   &__menu {
@@ -28,17 +34,22 @@
     }
 
     &--link {
-      padding-left: 1rem;
+      padding-left: 0rem;
+      margin-bottom: 1rem;
       display: block;
       text-decoration: none;
       color: rgb(63, 63, 63);
-      font-size: 1.2rem;
+      font-size: 1rem;
 
       &.active {
         background: white;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        margin-left: -1rem;
+        padding-top: 0.7rem;
+        padding-left: 1rem;
+        padding-bottom: 0.7rem;
         border-radius: 30px 0px 0px 30px;
+        transition: 0.4s ease-in-out;
+        color: rgb(42, 89, 133);
       }
     }
 
@@ -51,20 +62,19 @@
     // }
 
     &--icon {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       padding-right: 0.8rem;
       margin-top: -4px;
     }
   }
+
+  // &__settings {
+  //   margin-top: 18rem;
+
+  //   &--icon {
+  //     font-size: 1.2rem;
+  //     margin-left: 1rem;
+  //   }
+  // }
 }
 
-.main-content {
-  margin-left: 15rem;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  position: relative;
-}

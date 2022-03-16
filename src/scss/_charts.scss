@@ -1,0 +1,186 @@
+.charts__card--doughnut {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  padding: 2rem;
+  width: 15rem;
+  height: 13rem;
+  border-radius: 1.3rem;
+}
+
+.charts__card--bar {
+    width: 30rem;
+    margin-top: -18.7rem;
+    margin-left: 27rem;
+    padding: 2rem;
+    border-radius: 1.3rem;
+}
+
+.charts__card--count {
+  width: 82%;
+  padding: 0.7rem;
+  border-radius: 1.3rem;
+  margin-left: 4.5rem;
+}
+
+.count {
+
+  &__title  {
+    text-align: center;
+
+    &--heading {
+      font-size: 4rem;
+    }
+
+    p {
+      white-space: nowrap;
+      font-weight: 500;
+    }
+  }
+}
+
+.doughnut {
+  position: relative;
+
+  &__canvas {
+    margin-top: -0.7rem;
+    width: 10rem;
+    margin-left: 2rem;
+  }
+
+  &__title {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 6.9rem;
+    left: 7.5rem;
+
+    & h5 {
+      font-size: 2rem;
+      color: #a6d997;
+      font-weight: 500;
+    }
+  }
+
+  &__label {
+    position: relative;
+    margin-top: 1.2rem;
+    
+    &-1 {
+      display: inline-block;
+      width: 1.8rem;
+      height: 1.3rem;
+      background-color: #a6d997;
+      border-radius: 5px;
+
+      &--data {
+        position: absolute;
+        font-size: 1.8rem;
+        left: 2.4rem;
+        top: -0.8rem;
+      }
+    }
+
+    &-2 {
+      display: inline-block;
+      margin-left: 6rem;
+      width: 1.8rem;
+      height: 1.3rem;
+      background-color: #dfeedb;
+      border-radius: 5px;
+
+      &--data {
+        position: absolute;
+        font-size: 1.8rem;
+        left: 10.2rem;
+        top: -0.8rem;
+      }
+    }
+  }
+
+  &__legend {
+    position: relative;
+
+    &-1 {
+      position: absolute;
+      left: -0.7rem;
+      top: 1.48rem;
+      font-size: 0.7rem;
+    }
+
+    &-2 {
+      position: absolute;
+      font-size: 0.7rem;
+      left: 7rem;
+      top: 1.48rem;
+    }
+  }
+}
+
+.bar {
+  position: relative;
+
+  &__canvas {
+    width: 20rem;
+  }
+
+  &__title {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+
+  &__label {
+    position: absolute;
+    left: 25rem;
+    top: 5rem;
+
+    &-1 {
+      background-color: #ffbb4f;
+      width: 1.8rem;
+      height: 1.3rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+    }
+
+    &-2 {
+      background-color: #ffda93;
+      width: 1.8rem;
+      height: 1.3rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+    }
+
+    &-3 {
+      background-color: #ff7576;
+      width: 1.8rem;
+      height: 1.3rem;
+      border-radius: 5px;
+    }
+  }
+
+  &__legend {
+    position: relative;
+
+    &-1 {
+      position: absolute;
+      top: -0.2rem;
+      left: 2.2rem;
+    }
+
+    &-2 {
+      position: absolute;
+      top: 2.1rem;
+      left: 2.2rem;
+    }
+
+    &-3 {
+      position: absolute;
+      top: 4.39rem;
+      left: 2.2rem;
+    }
+  }
+}
