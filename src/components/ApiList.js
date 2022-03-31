@@ -1,10 +1,13 @@
 import { TablePagination, Tooltip } from "@material-ui/core";
 import React, { useState } from "react";
 import data from "../data.json";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaRegThumbsDown, FaThumbsDown } from "react-icons/fa";
 import CategoryModal from "./CategoryModal";
 import { IoAlertCircleSharp } from "react-icons/io5";
-import pic from '../image/logo-1.png';
+import { FcInfo } from "react-icons/fc";
+import { VscThumbsup, VscThumbsdown } from "react-icons/vsc";
+import { IoMdThumbsDown, IoMdThumbsUp } from "react-icons/io";
+// import pic from '../image/logo-1.png';
 
 const ApiList = () => {
   const [searchData, setSearchData] = useState("");
@@ -63,7 +66,7 @@ const ApiList = () => {
           <div className="header__search">
             <FaSearch className="header__search--icon" />
             <input
-              placeholder="Search here"
+              placeholder="Search"
               className="header__search--input"
               value={searchData}
               onChange={(e) => setSearchData(e.target.value)}
@@ -73,13 +76,20 @@ const ApiList = () => {
 
         <div className="card">
           <div className="table--wrap">
-            <table className="table">
-              <thead className="table__heading">
+            <table className="table table-responsive">
+              <thead className="bg-light" style={{whiteSpace: 'nowrap', fontSize: '0.9rem'}}>
                 <tr>
                   <td>Name</td>
-                  <td>Score</td>
-                  <td>Recommendation</td>
-                  {/* <td className="table__categories">Failing Categories</td> */}
+                  <td>Score
+                    <div className="table__tooltip-1">
+                      <Tooltip title={'Score is out of 9 categories'}  placement="top">
+                        <span>
+                          <FcInfo className="table__tooltip-1--icon" />
+                         </span>
+                      </Tooltip>
+                    </div>
+                  </td>
+                  <td>Recommended</td>
                 </tr>
               </thead>
               <tbody>
@@ -115,24 +125,28 @@ const ApiList = () => {
                           </a>
                           {/* </Link> */}
                         </td>
-                        <td>{item.recommendation.score}</td>
+                        <td style={{textAlign: 'center'}}><span style={{marginLeft: '-4.5rem', fontSize: '0.9rem', fontWeight: '500'}}>{item.recommendation.score}</span></td>
                         <td>
                           <span
                             className="table__data--status"
                             style={{
-                              background:
-                                (item.recommendation.status === "Good" &&
-                                  "#cff6dd") ||
-                                (item.recommendation.status === "Bad" &&
-                                  "#f6cfcf"),
+                              // background:
+                              //   (item.recommendation.status === "Good" &&
+                              //     "#cff6dd") ||
+                              //   (item.recommendation.status === "Bad" &&
+                              //     "#f6cfcf"),
+                              // cursor: 'pointer',
+                              fontSize: "0.9rem",
+                              // marginLeft: '2.5rem',
                               color:
                                 (item.recommendation.status === "Good" &&
-                                  "#1fa750") ||
+                                  "#02bc88") ||
                                 (item.recommendation.status === "Bad" &&
-                                  "#dc3545"),
+                                  "#ee3b5e"),
                             }}
                           >
-                            {item.recommendation.status}
+                            {item.recommendation.status === "Good" ? "Recommended" : "Not Recommended"}
+                            {/* {item.recommendation.status === "Good" ? <IoMdThumbsUp style={{fontSize: '1.5rem', marginLeft: '2rem'}} /> : <IoMdThumbsDown style={{fontSize: '1.5rem', marginLeft: '2rem'}} />} */}
                           </span>
                           <div className="table__tooltip">
                             <Tooltip

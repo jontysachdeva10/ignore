@@ -1,15 +1,24 @@
 .card {
-    // border-radius: 1rem;
     margin: 0.2rem 0rem 0rem 1.4rem;
     width: 95%;
+    // box-shadow: 0.5px 2px 1px rgba($color: #000000, $alpha: 0.3);
 }
+
+// .my-container {
+//     width: 95%;
+//     margin: 0.2rem 0rem 0rem 0.5rem;
+//     border: 1px solid rgb(124, 122, 122);
+//     border-radius: 0.3rem;
+// }
 
 
 .table--wrap {
+    // margin-top: 0rem;
     position: relative;
-    width: 100%;
-    display: inline-block;
-    box-sizing: border-box;
+    overflow: hidden;
+    // width: 100%;
+    // display: inline-block;
+    // box-sizing: border-box;
     margin-bottom: 0rem;
 }
 
@@ -18,15 +27,16 @@
     &__link {
         &:visited, &:link {
             text-decoration: none;
+            font-size: 0.9rem;
         }
     }
 
-    &__heading {
-        background-color: rgb(226, 226, 226);
-        color: rgb(90, 90, 90);
-        font-weight: 500;
-        white-space: nowrap;
-    }
+    // &__heading {
+    //     background-color: rgb(226, 226, 226);
+    //     color: rgb(90, 90, 90);
+    //     font-weight: 500;
+    //     white-space: nowrap;
+    // }
 
     &__pagination {
         margin-top: -1rem;
@@ -45,15 +55,29 @@
         display: inline-block;
     }
 
+    &__tooltip-1 {
+        margin-top: -1.5rem;
+        margin-left: 2.6rem;
+        cursor: pointer;
+        
+        &--icon {
+            font-size: 1.2rem;
+        }
+
+        :hover {
+            color: grey;
+        }
+    }
+
     &__tooltip {
-        margin-left: 9rem;
+        margin-left: 9.5rem;
         margin-top: -1.5rem;
         cursor: pointer;
 
-        &--img {
-            height: 1.5rem;
-            width: 1.5rem;
-        }
+        // &--img {
+        //     height: 1.5rem;
+        //     width: 1.5rem;
+        // }
 
         &--icon {
             margin-top: -0.3rem;
@@ -94,12 +118,12 @@
   }
 
 .table__data--status {
-    padding: 4px 12px 4px 12px;
+    padding: 4px 0px 4px 0px;
     border-radius: 3rem;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
 
-th, td {
-    padding: 0.6rem !important;
+th, td, thead {
+    padding: 0.48rem !important;
 }

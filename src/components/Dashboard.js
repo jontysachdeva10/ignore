@@ -61,13 +61,13 @@ const Dashboard = () => {
     <div className="main-content">
       <header className="header">
         <div className="header__title">
-          <p>Dashboard</p>
+          <p>Curated Dashboard</p>
         </div>
 
         <div className="header__search">
             <FaSearch className="header__search--icon" />
             <input
-              placeholder="Search here"
+              placeholder="Search"
               className="header__search--input"
               // value={searchData}
               // onChange={(e) => setSearchData(e.target.value)}
@@ -75,6 +75,7 @@ const Dashboard = () => {
           </div>
       </header>
       <section className="charts__card--count card">
+      <span className="charts__count--title">Classification of APIs</span>
         <div className="row">
           <div className="col-1-of-4">
             <div className="count__title">
@@ -103,7 +104,7 @@ const Dashboard = () => {
         </div>
       </section>
       <div className="charts__card--doughnut card">
-        <span className="doughnut__title">Success Rate</span>
+        <span className="doughnut__title">Curated APIs</span>
         <div className="doughnut__canvas">
           <Doughnut
             data={doughnutChartData}

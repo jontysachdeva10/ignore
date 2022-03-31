@@ -1,6 +1,6 @@
 .charts__card--doughnut {
   margin-top: 2rem;
-  margin-left: 5rem;
+  margin-left: 6rem;
   padding: 2rem;
   width: 15rem;
   height: 13rem;
@@ -9,8 +9,8 @@
 
 .charts__card--bar {
     width: 30rem;
-    margin-top: -18.7rem;
-    margin-left: 27rem;
+    margin-top: -18.6rem;
+    margin-left: 27.3rem;
     padding: 2rem;
     border-radius: 1.3rem;
 }
@@ -28,7 +28,7 @@
     text-align: center;
 
     &--heading {
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     p {
@@ -50,12 +50,12 @@
   &__title {
     margin-top: -1rem;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   &__inner {
     position: absolute;
-    top: 6.9rem;
+    top: 6.5rem;
     left: 7.5rem;
 
     & h5 {
@@ -130,7 +130,7 @@
   &__title {
     margin-top: -1rem;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   &__label {

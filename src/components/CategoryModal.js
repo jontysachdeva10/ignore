@@ -32,7 +32,7 @@ const CategoryModal = ({
         <div className="modal__card card" tabIndex="0">
           <div className="modal__table">
             <table className="table">
-              <thead className="modal__table--heading">
+              <thead className="bg-light">
                 <tr>
                   <td>S.No</td>
                   <td>Category</td>
@@ -93,7 +93,7 @@ const CategoryModal = ({
           <div className="category__list">
             <div className="category__card card">
               <table className="table table-hovered">
-                <thead className="modal__table--heading">
+                <thead className="bg-light">
                   <tr>
                     <td>S.No</td>
                     <td>Category</td>

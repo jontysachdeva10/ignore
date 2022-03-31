@@ -500,7 +500,7 @@
 		],
 		"recommendation": {
          "status": "Bad",
-		 "score": "3.5/9 - 0.38"
+		 "score": "3.5"
       },
 		"spec": ""
 	},
@@ -996,7 +996,7 @@
 		],
 		"recommendation": {
          "status": "Bad",
-		 "score": "3.5/9 - 0.38"
+		 "score": "3.5"
       },
 		"spec": ""
 	},
@@ -1497,7 +1497,7 @@
 		],
 		"recommendation": {
          "status": "Good",
-		 "score": "6/9 - 0.66"
+		 "score": "6"
       },
 		"spec": ""
 	},
@@ -1988,7 +1988,7 @@
 		],
 		"recommendation": {
          "status": "Good",
-		 "score": "6.5/9 - 0.72"
+		 "score": "6.5"
       },
 		"spec": ""
 	},
@@ -2479,7 +2479,7 @@
 		],
 		"recommendation": {
          "status": "Good",
-		 "score": "6/9 - 0.66"
+		 "score": "6"
       },
 		"spec": ""
 	},
@@ -2979,7 +2979,7 @@
 		],
 		"recommendation": {
          "status": "Good",
-		 "score": "6/9 - 0.66"
+		 "score": "6"
       },
 		"spec": ""
 	},
@@ -3490,7 +3490,7 @@
 		],
 		"recommendation": {
          "status": "Bad",
-		 "score": "3.5/9 - 0.38"
+		 "score": "3.5"
       },
 		"spec": ""
 	},
@@ -3976,7 +3976,7 @@
 		],
 		"recommendation": {
          "status": "Bad",
-		 "score": "4/9 - 0.44"
+		 "score": "4"
       },
 		"spec": ""
 	},
@@ -4666,7 +4666,7 @@
 		],
 		"recommendation": {
          "status": "Good",
-		 "score": "6/9 - 0.66"
+		 "score": "6"
       },
 		"spec": ""
 	}

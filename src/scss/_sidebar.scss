@@ -1,5 +1,5 @@
 .sidebar {
-  width: 11rem;
+  width: 9.5rem;
   position: fixed;
   height: 100%;
   background: #f1f1f1;
@@ -21,25 +21,19 @@
     position: relative;
 
     &--list {
+      padding: 0;
+      margin-left: 1.5rem;
       width: 100%;
-    //   padding-top: 1rem;
-    //   padding-bottom: 1rem;
       margin-bottom: 1.5rem;
-      // padding-left: 0.7rem;
-
-      // &:hover {
-      //     // padding-left: 1rem;
-      //     transform: scale(1.2) translate(.5rem);
-      // }
     }
 
     &--link {
-      padding-left: 0rem;
       margin-bottom: 1rem;
       display: block;
       text-decoration: none;
       color: rgb(63, 63, 63);
-      font-size: 1rem;
+      font-size: 0.8rem;
+      font-weight: 500;
 
       &.active {
         background: white;
@@ -62,9 +56,9 @@
     // }
 
     &--icon {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       padding-right: 0.8rem;
-      margin-top: -4px;
+      margin-top: -3px;
     }
   }
 
